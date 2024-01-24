@@ -15,9 +15,9 @@ class _QRCodeOnWebState extends State<QRCodeOnWeb> {
     // add 3 seconds delay
     Future.delayed(Duration(seconds: 3), () {
       // call the updateUrl function
-      widget.barcode.contains('http')
-          ? updateUrl(widget.barcode)
-          : updateUrl('');
+      // widget.barcode.contains('http')
+           updateUrl(widget.barcode)
+          // : updateUrl('');
     });
     updateUrl(widget.barcode);
   }
